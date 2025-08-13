@@ -4,7 +4,7 @@
     "slug": "p2vest-todo-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/todyapp_logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -31,6 +31,15 @@
         "projectId": "534cd33e-bef3-4aae-98b0-8f525018ac37"
       }
     },
-    "owner": "noelams"
+    "owner": "noelams",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/534cd33e-bef3-4aae-98b0-8f525018ac37"
+    },
+    "plugins": [
+      "expo-build-properties"
+    ]
   }
 }

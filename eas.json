@@ -8,17 +8,36 @@
       "developmentClient": true,
       "distribution": "internal"
     },
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      },
-      "channel": "preview"
-    },
+   "preview": {
+  "android": {
+    "buildType": "apk",
+    "gradleCommand": ":app:assembleRelease"
+  },
+  "channel": "preview"
+},
     "production": {
       "autoIncrement": true
     }
   },
   "submit": {
     "production": {}
+  },
+  "expo": {
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "useLegacyPackaging":true
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ]
   }
 }
