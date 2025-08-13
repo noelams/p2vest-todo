@@ -12,6 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "jsEngine": "hermes",
     "ios": {
       "supportsTablet": true
     },
@@ -47,7 +48,9 @@
             "compileSdkVersion": 35,
             "targetSdkVersion": 35,
             "buildToolsVersion": "35.0.0",
-            "useLegacyPackaging": true
+            "useLegacyPackaging": true,
+            "enableProguardInReleaseBuilds": true,
+            "proguardRules": "proguard-rules.pro"
           },
           "ios": {
             "deploymentTarget": "15.1"
